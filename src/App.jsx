@@ -6,6 +6,7 @@ import './App.css'
 // src/App.jsx
 import AlumnoCard from './components/AlumnoCard/AlumnoCard';
 import Navbar from './components/Navbar/Navbar';
+import Contador from './components/Contador'; // <--- Importamos el componente Contador[cite: 8]
 
 function App() {
   return (
@@ -18,43 +19,46 @@ function App() {
         <h2 className="mb-4">Directorio de Alumnos</h2>
 
         <div className="row">
-          {/* 3. Reutilizamos el componente AlumnoCard pasándole Props diferentes */}
+          {/* 3. Reutilizamos el componente AlumnoCard pasándole estadoInicial[cite: 11] */}
           <AlumnoCard 
             nombre="Daniel Puccio"
             carrera="Desarrollo de Software"
-            estado="Matriculado"
+            estadoInicial="Matriculado"
           />
 
           <AlumnoCard 
             nombre="Maria Perez"
             carrera="Diseño Gráfico"
-            estado="Inactivo"
+            estadoInicial="Inactivo"
           />
 
           <AlumnoCard 
             nombre="Carlos Mendoza"
             carrera="Administración Industrial"
-            estado="Matriculado"
+            estadoInicial="Matriculado"
           />
 
           <AlumnoCard 
             nombre="Juan David"
             carrera="ciberseguridad"
-            estado="Matriculado"
+            estadoInicial="Matriculado"
           />
 
           <AlumnoCard 
             nombre="Miguel Luis"
             carrera="Diseño Gráfico"
-            estado="Inactivo"
+            estadoInicial="Inactivo"
           />
 
           <AlumnoCard 
             nombre="Holiver"
             carrera="Administración Industrial"
-            estado="Matriculado"
+            estadoInicial="Matriculado"
           />
         </div>
+
+        {/* 4. Renderizamos el contador interactivo al final[cite: 8] */}
+        <Contador />
       </div>
     </>
   );
