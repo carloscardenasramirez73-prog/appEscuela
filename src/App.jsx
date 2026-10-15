@@ -5,7 +5,7 @@ import viteLogo from './assets/vite.svg'
 import './App.css'
 // src/App.jsx
 import AlumnoCard from './components/AlumnoCard/AlumnoCard';
-import Navbar from './components/Navbar/Navbar'
+import Navbar from './components/Navbar/Navbar';
 
 function App() {
   return (
